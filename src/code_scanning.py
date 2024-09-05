@@ -69,6 +69,8 @@ def write_repo_cs_list(cs_list):
         for cs in cs_list:
             testing=cs["dismissed_comment"]
             print('testing',testing)
+            testing.replace('\n', ' ').replace('\r', ' ')
+
             writer.writerow(
                 [
                     cs["number"],
