@@ -69,10 +69,7 @@ def write_repo_cs_list(cs_list):
         for cs in cs_list:
             testing=cs["dismissed_comment"]
             if testing is not None:
-                print('testing  =',len(testing))
                 testing= testing.strip()
-                print('testinggg=',len(testing))
-
             writer.writerow(
                 [
                     cs["number"],
@@ -122,9 +119,7 @@ def list_org_cs_alerts(api_endpoint, github_pat, org_name):
 
 
 def write_org_cs_list(cs_list):
-    print('write_org_cs_list')
-    print(cs_list)
-
+    
     """
     Write a list of code scanning alerts to a csv file.
 
@@ -171,8 +166,6 @@ def write_org_cs_list(cs_list):
             ]
         )
         for cs in cs_list:
-            testing2=cs.get("dismissed_comment", "")
-            print('testing 2',testing2)
             writer.writerow(
                 [
                     cs["number"],
@@ -240,9 +233,7 @@ def list_enterprise_server_cs_alerts(api_endpoint, github_pat, repo_list):
 
 
 def write_enterprise_server_cs_list(cs_list):
-    print('write_enterprise_server_cs_list')
-    print(cs_list)
-
+   
     """
     Write a list of code scanning alerts to a csv file.
 
@@ -321,9 +312,7 @@ def write_enterprise_server_cs_list(cs_list):
 
 
 def list_enterprise_cloud_cs_alerts(api_endpoint, github_pat, enterprise_slug):
-    
-    print('list_enterprise_cloud_cs_alerts')
-    print(api_endpoint)
+
     """
     Get a list of all code scanning alerts on a given enterprise.
 
@@ -342,9 +331,7 @@ def list_enterprise_cloud_cs_alerts(api_endpoint, github_pat, enterprise_slug):
 
 
 def write_enterprise_cloud_cs_list(cs_list):
-    print('write_enterprise_cloud_cs_list')
-    print(cs_list)
-
+   
     """
     Write a list of code scanning alerts to a csv file.
 
