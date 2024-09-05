@@ -68,7 +68,7 @@ def write_repo_cs_list(cs_list):
 
         for cs in cs_list:
             testing=cs["dismissed_comment"]
-            if x is not None:
+            if testing is not None:
                 testing.replace('\n', ' ').replace('\r', ' ')
                 print('testing',testing)
 
