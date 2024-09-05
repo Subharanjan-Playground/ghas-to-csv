@@ -6,6 +6,8 @@ from . import api_helpers
 
 
 def list_repo_cs_alerts(api_endpoint, github_pat, repo_name):
+    print('list_repo_cs_alerts')
+    print(api_endpoint)
     """
     Get a list of all code scanning alerts on a given repository.
 
@@ -24,6 +26,8 @@ def list_repo_cs_alerts(api_endpoint, github_pat, repo_name):
 
 
 def write_repo_cs_list(cs_list):
+    print('write_repo_cs_list')
+    print(cs_list)
     """
     Write a list of code scanning alerts to a csv file.
 
@@ -88,6 +92,8 @@ def write_repo_cs_list(cs_list):
 
 
 def list_org_cs_alerts(api_endpoint, github_pat, org_name):
+    print('list_org_cs_alerts')
+    print(api_endpoint)
     """
     Get a list of all code scanning alerts on a given organization.
 
@@ -107,6 +113,9 @@ def list_org_cs_alerts(api_endpoint, github_pat, org_name):
 
 
 def write_org_cs_list(cs_list):
+    print('write_org_cs_list')
+    print(cs_list)
+
     """
     Write a list of code scanning alerts to a csv file.
 
@@ -186,6 +195,9 @@ def write_org_cs_list(cs_list):
 
 
 def list_enterprise_server_cs_alerts(api_endpoint, github_pat, repo_list):
+    print('list_enterprise_server_cs_alerts')
+    print(api_endpoint)
+
     """
     Get a list of all code scanning alerts on a given enterprise.
 
@@ -215,6 +227,9 @@ def list_enterprise_server_cs_alerts(api_endpoint, github_pat, repo_list):
 
 
 def write_enterprise_server_cs_list(cs_list):
+    print('write_enterprise_server_cs_list')
+    print(cs_list)
+
     """
     Write a list of code scanning alerts to a csv file.
 
@@ -291,6 +306,9 @@ def write_enterprise_server_cs_list(cs_list):
 
 
 def list_enterprise_cloud_cs_alerts(api_endpoint, github_pat, enterprise_slug):
+    
+    print('list_enterprise_cloud_cs_alerts')
+    print(api_endpoint)
     """
     Get a list of all code scanning alerts on a given enterprise.
 
@@ -309,6 +327,9 @@ def list_enterprise_cloud_cs_alerts(api_endpoint, github_pat, enterprise_slug):
 
 
 def write_enterprise_cloud_cs_list(cs_list):
+    print('write_enterprise_cloud_cs_list')
+    print(cs_list)
+
     """
     Write a list of code scanning alerts to a csv file.
 
