@@ -65,7 +65,11 @@ def write_repo_cs_list(cs_list):
                 "instances_url",
             ]
         )
+
         for cs in cs_list:
+            testing=cs["dismissed_comment"]
+            print('testing',testing)
+            
             writer.writerow(
                 [
                     cs["number"],
@@ -164,6 +168,8 @@ def write_org_cs_list(cs_list):
             ]
         )
         for cs in cs_list:
+            testing2=cs.get("dismissed_comment", "")
+            print('testing 2',testing2)
             writer.writerow(
                 [
                     cs["number"],
