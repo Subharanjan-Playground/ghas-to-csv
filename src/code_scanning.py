@@ -68,9 +68,7 @@ def write_repo_cs_list(cs_list):
 
         for cs in cs_list:
             testing=cs["dismissed_comment"]
-            data = testing.encode('utf-8').decode('unicode_escape')
             print('testing',testing)
-            print('data',data)
             writer.writerow(
                 [
                     cs["number"],
@@ -81,7 +79,7 @@ def write_repo_cs_list(cs_list):
                     cs["dismissed_by"],
                     cs["dismissed_at"],
                     cs["dismissed_reason"],
-                    data,
+                    testing,
                     cs["rule"]["id"],
                     cs["rule"]["severity"],
                     cs["rule"].get("security_severity_level", ""),
